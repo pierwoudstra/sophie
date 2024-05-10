@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@500&family=Instrument+Serif:ital@0;1&family=VT323&display=swap');
+
+* {
+  cursor: url('assets/scissors.png'), auto;
+  margin: 0;
+  padding: 0;
+}
+
+*:hover {
+  cursor: url('assets/scissors.png'), auto;
+}
+
+html, body {
+  cursor: url('assets/scissors.png'), auto;
+  background-image: url('assets/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: url('assets/scissors.png'), auto;
+  font-family: "Pixelify Sans", sans-serif;
+  font-style: italic;
+  /* background-color:aliceblue; */
+  color:rgb(255, 140, 255);
+  text-decoration: none;
+  font-size: 4vmin;
+}
+
+.column-1 a {
+  background-color:aliceblue;
+}
+
+canvas {
+  cursor: url('assets/scissors.png'), auto;
+  display: block;
+}
+
+.columns {
+  cursor: url('assets/scissors.png'), auto;
+  display: grid;
+  flex-wrap: wrap;
+
+  margin: 0rem;
+
+  grid-template-columns: 30% 25% 25% 20%;
+  /* grid-gap: 20px; */
+}
+
+.columns img {
+  cursor: url('assets/scissors.png'), auto;
+  width: 100%;
+  /* padding: 10px; */
+}
+
+.column-1 {
+  margin-top: 50%;
+  cursor: url('assets/scissors.png'), auto;
+  padding: 15px;
+}
+
+.column-2 {
+  cursor: url('assets/scissors.png'), auto;
+}
+
+.column-3 {
+  cursor: url('assets/scissors.png'), auto;
+}
+
+.photos {
+  display: flex;
+  overflow-x: scroll;
+  aspect-ratio: 1 / 1;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem aliceblue;
+  border-radius: 0.5rem;
+  scrollbar-color: red orange;
+  scrollbar-width: thin;
+  margin: 10px;
+}
+
+.photos img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.footer {
+  /* background-color: aliceblue; */
+  height: 3vh;
+  padding: 2rem;
+  position: fixed;
+  top: 95%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  box-shadow: #444444;
+}
+
+@media screen and (max-width: 950px) {
+  .columns {
+      display: grid;
+      flex-wrap: wrap;
+      padding: 20px;
+  
+      padding-top: 13vh;
+      height: 87vh;
+      margin: 0rem;
+  
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+  }
+
+  .column-1 {
+    margin-top: 0%; 
+    background-color:aliceblue;
+  }
+}
